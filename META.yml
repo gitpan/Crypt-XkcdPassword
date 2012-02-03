@@ -25,6 +25,7 @@ no_index:
 requires:
   Carp: 0
   Class::Load: 0
+  Moo: 0
   Object::AUTHORITY: 0
   perl: 5.10.0
   utf8: 0
@@ -33,4 +34,4 @@ resources:
   homepage: https://metacpan.org/release/Crypt-XkcdPassword
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-crypt-xkcdpassword
-version: 0.001
+version: 0.002

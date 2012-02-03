@@ -5,6 +5,10 @@ use Web::Magic;
 
 print <<'HEADER';
 package Crypt::XkcdPassword::Words::IT;
+BEGIN {
+	$Crypt::XkcdPassword::Words::IT::AUTHORITY = 'cpan:TOBYINK';
+	$Crypt::XkcdPassword::Words::IT::VERSION   = '0.002';
+}
 my @words;
 sub words
 {

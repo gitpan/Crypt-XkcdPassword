@@ -6,23 +6,22 @@ use utf8;
 
 BEGIN {
 	$Crypt::XkcdPassword::AUTHORITY = 'cpan:TOBYINK';
-	$Crypt::XkcdPassword::VERSION   = '0.001';
+	$Crypt::XkcdPassword::VERSION   = '0.002';
 }
 
 use Carp qw/carp croak/;
 use Class::Load qw/try_load_class/;
-
-use Mo qw/default/;
+use Moo;
 
 has rng => (
 	is      => 'rw',
-	isa     => 'CodeRef',
+	isa     => sub { ref $_[0] eq 'CODE' },
 	default => sub { sub { int(rand($_[0])) } },
 	);
 
 has words => (
 	is      => 'rw',
-	isa     => 'Str',
+	isa     => sub { !ref $_[0] },
 	default => sub { 'EN' },
 	);
 
