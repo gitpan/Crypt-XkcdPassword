@@ -1,13 +1,14 @@
-use 5.010;
+use 5.010001;
 use strict;
 use utf8::all;
 use Web::Magic;
 
 print <<'HEADER';
 package Crypt::XkcdPassword::Words::IT;
+use 5.010001;
 BEGIN {
 	$Crypt::XkcdPassword::Words::IT::AUTHORITY = 'cpan:TOBYINK';
-	$Crypt::XkcdPassword::Words::IT::VERSION   = '0.002';
+	$Crypt::XkcdPassword::Words::IT::VERSION   = '0.003';
 }
 my @words;
 sub words

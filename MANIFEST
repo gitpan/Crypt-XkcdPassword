@@ -1,4 +1,8 @@
 Changes
+examples/crypt-random.pl
+examples/filter-profanity.pl
+examples/filter-spelling.pl
+examples/filter.pl
 examples/password-gen.pl
 inc/Module/AutoInstall.pm
 inc/Module/Install.pm
@@ -20,6 +24,7 @@ inc/Scalar/Util.pm
 inc/Scalar/Util/PP.pm
 inc/YAML/Tiny.pm
 lib/Crypt/XkcdPassword.pm
+lib/Crypt/XkcdPassword/Examples.pod
 lib/Crypt/XkcdPassword/Words/EN.pm
 lib/Crypt/XkcdPassword/Words/IT.pm
 LICENSE
@@ -29,9 +34,11 @@ META.yml
 meta/changes.ttl
 meta/doap.ttl
 meta/makefile.ttl
+meta/rt-bugs.ttl
 README
 t/01basic.t
 t/02nonrandom.t
+t/03filter.t
 util/make_en_words.pl
 util/make_it_words.pl
 SIGNATURE                                Public-key signature (added by MakeMaker)

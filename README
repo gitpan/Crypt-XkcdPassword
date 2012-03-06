@@ -48,7 +48,7 @@ DESCRIPTION
         number generator.
 
   Methods
-    *   "make_password($size)"
+    *   "make_password($size, $filter)"
 
         Returns the password as a string.
 
@@ -56,6 +56,12 @@ DESCRIPTION
         the English dictionary that provides over 47 bits of entropy; for
         the Italian dictionary (which has twice as many words), about 56
         bits of entropy.
+
+        $filter is a test against which each word is checked. It can be a
+        sub returning true if the word is OK, or a regular expression
+        matching OK words. Words which are not OK will be excluded from
+        passwords. The default is to allow any words found in the provided
+        dictionary.
 
         For reference, 47 bits of entropy is roughly equivalent to an eight
         digit random case-sensitive alphanumeric password (i.e. 62^8).
@@ -69,7 +75,9 @@ DESCRIPTION
          say Crypt::XkcdPassword->new->make_password($size);
 
         Note that the passphrases returned may not be ASCII-safe, and may
-        sometimes be inappropriate for uttering in polite company.
+        sometimes be inappropriate for uttering in polite company. See
+        Crypt::XkcdPassword::Examples for ways of using $filter to resolve
+        this situation.
 
     *   "chars"
 
@@ -84,6 +92,8 @@ BUGS
     <http://rt.cpan.org/Dist/Display.html?Queue=Crypt-XkcdPassword>.
 
 SEE ALSO
+    Crypt::XkcdPassword::Examples - how to do stuff with this module.
+
     Data::SimplePassword - I borrowed this module's interface, so it should
     mostly be possible to s/Data::SimplePassword/Crypt::XkcdPassword/.
 

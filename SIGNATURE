@@ -14,12 +14,16 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 c8f19b13adf8095977b49d7c7b8a910adc6aa3d4 Changes
+SHA1 07b0f6f3817871100f9886ebb1fab8921a96c4fa Changes
 SHA1 1d54db0b8134eb1c8ea0cee400f9dc612bcaa61a LICENSE
-SHA1 0fa5e97a0763861537c5acd0bef2e9c4ddedd215 MANIFEST
-SHA1 fb1f75ea1c6cfd774a50613787834b7d6498545d META.yml
+SHA1 87479699d90c765d3a3120b46f219e4202631f91 MANIFEST
+SHA1 40ad0d89cb64c8b3626ebcbc1fac9c8be7e2f140 META.yml
 SHA1 7150e5e086ef493e1e527a1eeec44a8344b80db6 Makefile.PL
-SHA1 ad80dfeef787806c646dd92a84928a37a1c2c214 README
+SHA1 a9c18c517af6ac9e46756e158804088c59f1b8ac README
+SHA1 663430eab53de6b40e867367b9d4e226c454e094 examples/crypt-random.pl
+SHA1 366e033a8f0dd6e94a34662d9b0087baf721930a examples/filter-profanity.pl
+SHA1 909f58846fe1b33909c59280a2589c6fdbafc569 examples/filter-spelling.pl
+SHA1 a207417835c8acbc2f1260127065ceb5db7e48fc examples/filter.pl
 SHA1 db996da4e371675417ada7fffcfff1b6d99c4916 examples/password-gen.pl
 SHA1 5d94bc10deff1dd74e4bc5dfa6fc015e39271f15 inc/Module/AutoInstall.pm
 SHA1 40106479d4e07f379cb82ca1d69fca92e3a40f47 inc/Module/Install.pm
@@ -37,23 +41,26 @@ SHA1 1326052d1df1065debee74f9d8583a734b9b3d00 inc/Module/Install/Win32.pm
 SHA1 bb607f3715c40fc3bc1c46496587cdb215bc4fa2 inc/Module/Install/WriteAll.pm
 SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
 SHA1 6b807287940754cc31a3db59f2b22e363d5525be inc/Module/Package/Dist/RDF.pm
-SHA1 775bd24f2fdbb6dce51a8b5b0cdb01fccfce83c4 inc/Scalar/Util.pm
-SHA1 b1b664983568bf822c327599eb88e223483ae96a inc/Scalar/Util/PP.pm
+SHA1 e31c281782183601e1e057c5914f63269e043932 inc/Scalar/Util.pm
+SHA1 5eae2f71c45a996a296d2445b18d0589307111f0 inc/Scalar/Util/PP.pm
 SHA1 eef6bff62046bff2ce08ba132d0b58fba30f40b4 inc/YAML/Tiny.pm
-SHA1 8e9700060af97f88b905207ef535463853c16c1e lib/Crypt/XkcdPassword.pm
-SHA1 11af752cbbb2cfb5c4dffe6323e786cbbd919b35 lib/Crypt/XkcdPassword/Words/EN.pm
-SHA1 9cf3459979798de36bc501e36c74c0c6019d602c lib/Crypt/XkcdPassword/Words/IT.pm
-SHA1 8cd027088dac5c8ed4f6d37c9bd40d2e0f6308eb meta/changes.ttl
+SHA1 62e18c41e668f23bec2f971536a831ab14c5dc6f lib/Crypt/XkcdPassword.pm
+SHA1 704ea0bd76b1be258cd5d263ee5d1117e8598a8d lib/Crypt/XkcdPassword/Examples.pod
+SHA1 a2ffa7687484ef45f675e9dbc835f780faecc1be lib/Crypt/XkcdPassword/Words/EN.pm
+SHA1 6e462dd21f176c6f0aa33655f7e8399daf7fc568 lib/Crypt/XkcdPassword/Words/IT.pm
+SHA1 d4dc5933a4c0356e37954401fa9dc419bdd24dc7 meta/changes.ttl
 SHA1 e4b094d08ff1a29acb102e86ee24603a0f820182 meta/doap.ttl
 SHA1 c2f357536108f41edaff851148792b8c4dbaf211 meta/makefile.ttl
+SHA1 3dc3d31b8266fe0a34439db3248e2dc35a7c7d42 meta/rt-bugs.ttl
 SHA1 95e19c1742236a5f0edd40ca95941ae45e0c2bc7 t/01basic.t
 SHA1 721aa339c9c7acdfe7049114375de11dbee774b5 t/02nonrandom.t
-SHA1 0cb26cb962f27474a7efdf5809713ff953652b3e util/make_en_words.pl
-SHA1 0d70979129c926450694d94ffb094770766a22cc util/make_it_words.pl
+SHA1 e1bf871c3bba211eb7ce15c39a2d132d8ee11fe8 t/03filter.t
+SHA1 1884b16a96ff2ae640f128920d281d4adefd8a21 util/make_en_words.pl
+SHA1 39f4eaa1b572674cab8bb186413ae0ca7e293bef util/make_it_words.pl
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAk8rKzMACgkQzr+BKGoqfTnV0ACeJ0Rpiuuz77Q8grt1Wa6xtUi3
-zbQAmwStfyStuhBaJEcT88myfE0+ubHP
-=yXag
+iEYEARECAAYFAk9VYYAACgkQzr+BKGoqfTl3IwCfd/ZuHLK3syLihT18QvGVs79H
+zmcAnidpufh+LkpSBf4OAfpZo3xeLVDi
+=KSvf
 -----END PGP SIGNATURE-----
