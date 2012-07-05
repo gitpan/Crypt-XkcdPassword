@@ -18,9 +18,7 @@ DESCRIPTION
         as many passwords as you like.
 
   Attributes
-    This module doesn't use Moose, but uses its "mini-me", Mo. Like Moose,
-    Mo provides the concept of attributes, which have a getter/setter
-    method.
+    This is a Moose (well, Any::Moose) based class.
 
     *   "words"
 
@@ -31,6 +29,11 @@ DESCRIPTION
 
         "Crypt::XkcdPassword::Words::EN" is a list of 10,000 common English
         words.
+
+        "Crypt::XkcdPassword::Words::EN::Roget" is a list of about 8500
+        words. The words are less questionable, but as there are fewer of
+        them, pass phrases will be chosen from a smaller pool, thus slightly
+        more guessable.
 
         Also supplied is "IT", a list of 20,000 common Italian words.
 

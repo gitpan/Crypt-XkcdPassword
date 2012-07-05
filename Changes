@@ -5,6 +5,11 @@ Created:      2012-02-02
 Home page:    <https://metacpan.org/release/Crypt-XkcdPassword>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Crypt-XkcdPassword>
 
+0.004  2012-07-06
+
+ - (Addition) EN::Roget word list.
+ - Switch from Moo to Any::Moose.
+
 0.003  2012-03-06
 
  - (Addition Documentation) Crypt::XkcdPassword::Examples
