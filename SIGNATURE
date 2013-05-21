@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.70.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,10 +14,13 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 d1d7e6ff4f56efe1bbcda7f60369f452b67db9cd Changes
-SHA1 cc087c3dd6e1b519c680e68cd0231735a68300a0 LICENSE
-SHA1 f6ff0b6ca4d29f3757f71d6664af6edee9d7f184 MANIFEST
-SHA1 bcb3e07b1f7fdc93cbd87af3710fbb296258c4d1 META.yml
+SHA1 cb38067db7b874506e3a6a5f7e07e6ac8b14d090 COPYRIGHT
+SHA1 821d1fb8e101759d8dcf31dc8603ed7b68006f1e CREDITS
+SHA1 bb73edbe6f5b8994468dd1cfb3e06df1dd7bc208 Changes
+SHA1 937d452c5c4069f4cda9ffaf45a33f1eb5f060e8 LICENSE
+SHA1 f22d6e5f6d0371afb3de3ee235600c2b48e66db4 MANIFEST
+SHA1 43f402d0566aa97602c99c8a2068bd4f9f85ed24 META.ttl
+SHA1 bc22fd50118d42d29be09d945895c781533234f1 META.yml
 SHA1 7150e5e086ef493e1e527a1eeec44a8344b80db6 Makefile.PL
 SHA1 358624e8bba1087369a16afe0dc9d6f5ac688d3c README
 SHA1 663430eab53de6b40e867367b9d4e226c454e094 examples/crypt-random.pl
@@ -31,28 +34,26 @@ SHA1 61ab1dd37e33ddbe155907ce51df8a3e56ac8bbf inc/Module/Install/AutoInstall.pm
 SHA1 c04f94f91fa97b9f8cfb5a36071098ab0e6c78e3 inc/Module/Install/AutoManifest.pm
 SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
 SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
+SHA1 9e4cc10c7f138a3f2c60d9ee1f34261f0d8c5aae inc/Module/Install/Contributors.pm
 SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
 SHA1 66d3d335a03492583a3be121a7d888f63f08412c inc/Module/Install/Include.pm
 SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
 SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
 SHA1 3b9281ddf7dd6d6f5de0a9642c69333023193c80 inc/Module/Install/Package.pm
-SHA1 9de7b5129351499c048328dfa718d0eab557cf30 inc/Module/Install/TrustMetaYml.pm
+SHA1 41f76ff6b39368a65da86377e43b34bacc2fb0eb inc/Module/Install/TrustMetaYml.pm
 SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
 SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
 SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
-SHA1 8d909d81d2f98514d42f67a972a489ff624a4183 inc/Module/Package/Dist/RDF.pm
-SHA1 0e0eed2e69d9583081868cf4f220068d0a018568 inc/Scalar/Util.pm
+SHA1 5a2f84a7a82eee0d1e5ed3628fe503a608efc10f inc/Module/Package/Dist/RDF.pm
 SHA1 feb933cefe2e3762e8322bd6071a2499f3440da1 inc/YAML/Tiny.pm
-SHA1 8105c0510a773b56840995fb4dd2dc64fe9ddaee inc/unicore/Name.pm
-SHA1 36df501c7c9b73c282c5174ed54d8283b2f2cbf2 inc/utf8.pm
-SHA1 694b203c1f95026f5e350e1d17ed45c0aaaffd78 lib/Crypt/XkcdPassword.pm
+SHA1 79ab5fea977000918f0968ded602452bba2ffa28 lib/Crypt/XkcdPassword.pm
 SHA1 83a1dc56eb152f6a7a97c24b1ed7ca00bac976bd lib/Crypt/XkcdPassword/Examples.pod
-SHA1 d918c2b7905f453350d30e43993ec953ee84c56a lib/Crypt/XkcdPassword/Words/EN.pm
-SHA1 0e2a81287102b76458378b1fd8b4fb00c9745b65 lib/Crypt/XkcdPassword/Words/EN/Roget.pm
-SHA1 7f6a77ced78fe06d2d80847e5358205b45ec7e82 lib/Crypt/XkcdPassword/Words/IT.pm
-SHA1 349f4fc8c20c522b1ec0e9de19a0022903ddde41 meta/changes.ttl
-SHA1 e4b094d08ff1a29acb102e86ee24603a0f820182 meta/doap.ttl
-SHA1 4080970e12cdf721b93ceaa5776a261dbeb8dd54 meta/makefile.ttl
+SHA1 6f3e64e9349742b38f3c1257feb6b52ad3154f60 lib/Crypt/XkcdPassword/Words/EN.pm
+SHA1 3be8ff2805dd0051139168bf10c02f7e33f410bc lib/Crypt/XkcdPassword/Words/EN/Roget.pm
+SHA1 842c44eb2b3ff62ea37099655f0e543e49b5d0e6 lib/Crypt/XkcdPassword/Words/IT.pm
+SHA1 8d1c2e0650b7499b8129d60c615a8b5d4460ab4a meta/changes.ttl
+SHA1 61c73fea5797db632def12498e7bcb39b2db1989 meta/doap.ttl
+SHA1 8c21fbe51c19c3cce79b24431274616189e33c7b meta/makefile.ttl
 SHA1 3dc3d31b8266fe0a34439db3248e2dc35a7c7d42 meta/rt-bugs.ttl
 SHA1 95e19c1742236a5f0edd40ca95941ae45e0c2bc7 t/01basic.t
 SHA1 721aa339c9c7acdfe7049114375de11dbee774b5 t/02nonrandom.t
@@ -62,9 +63,9 @@ SHA1 1884b16a96ff2ae640f128920d281d4adefd8a21 util/make_en_words.pl
 SHA1 565e91f427fcec99c358b413fddeb76f341ad9d7 util/make_en_words2.pl
 SHA1 39f4eaa1b572674cab8bb186413ae0ca7e293bef util/make_it_words.pl
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.10 (GNU/Linux)
+Version: GnuPG v1.4.12 (GNU/Linux)
 
-iEYEARECAAYFAk/2H/QACgkQzr+BKGoqfTn6MACeIMrbKU66Wlle/Tp9WXkAQ/4o
-aQEAoIMbpe9q3iC9pzKYq7K3gx6k90Ij
-=w7ZZ
+iEYEARECAAYFAlGbza0ACgkQzr+BKGoqfTmYGACeP+fucKzifvcWY5LudTPSEvoT
+SeMAoLUl+JtYEEGGI4KNLmG/IzJm0E5D
+=4iEc
 -----END PGP SIGNATURE-----

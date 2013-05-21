@@ -1,4 +1,6 @@
 Changes
+COPYRIGHT
+CREDITS
 examples/crypt-random.pl
 examples/filter-profanity.pl
 examples/filter-spelling.pl
@@ -10,6 +12,7 @@ inc/Module/Install/AutoInstall.pm
 inc/Module/Install/AutoManifest.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
+inc/Module/Install/Contributors.pm
 inc/Module/Install/Fetch.pm
 inc/Module/Install/Include.pm
 inc/Module/Install/Makefile.pm
@@ -20,9 +23,6 @@ inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 inc/Module/Package.pm
 inc/Module/Package/Dist/RDF.pm
-inc/Scalar/Util.pm
-inc/unicore/Name.pm
-inc/utf8.pm
 inc/YAML/Tiny.pm
 lib/Crypt/XkcdPassword.pm
 lib/Crypt/XkcdPassword/Examples.pod
@@ -32,6 +32,7 @@ lib/Crypt/XkcdPassword/Words/IT.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
+META.ttl
 META.yml
 meta/changes.ttl
 meta/doap.ttl
