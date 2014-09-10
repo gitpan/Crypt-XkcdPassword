@@ -4,30 +4,42 @@ Crypt-XkcdPassword
 Created:      2012-02-02
 Home page:    <https://metacpan.org/release/Crypt-XkcdPassword>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Crypt-XkcdPassword>
-Maintainer:   Toby Inkster <mailto:tobyink@cpan.org>
+Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
-0.005  2013-05-21
+0.006	2014-09-10
+
+ [ Packaging ]
+ - Switch to Dist::Inkt.
+
+0.005	2013-05-21
 
  - Any::Moose -> Moo + Types::Standard; smartmatch -> match::smart;
    Class::Load -> Module::Runtime.
 
-0.004  2012-07-06
+0.004	2012-07-06
 
- - (Addition) EN::Roget word list.
+ - Added: EN::Roget word list.
  - Switch from Moo to Any::Moose.
 
-0.003  2012-03-06
+0.003	2012-03-06
 
- - (Addition Documentation) Crypt::XkcdPassword::Examples
- - (Addition) Provide a $filter parameter to make_password.
- - (Packaging) Require Perl 5.10.1 (Unicode in 5.10.0 is too broken).
+ [ Documentation ]
+ - Crypt::XkcdPassword::Examples
 
-0.002  2012-02-03
+ [ Packaging ]
+ - Require Perl 5.10.1 (Unicode in 5.10.0 is too broken).
 
- - (Bugfix Packaging) Forgot to run mo-inline in 0.001, creating an
-   undeclared dependency on Mo. Have switched to Moo now anyway, and
-   declared that as a dependency.
+ [ Other ]
+ - Added: Provide a $filter parameter to make_password.
+   Fixes RT#74684.
+   Fixes RT#74685.
+   <https://rt.cpan.org/Ticket/Display.html?id=74684>
+   <https://rt.cpan.org/Ticket/Display.html?id=74685>
 
-0.001  2012-02-02  # Initial release
+0.002	2012-02-03
 
+ [ Bug Fixes ]
+ - Forgot to run mo-inline in 0.001, creating an undeclared dependency on
+   Mo. Have switched to Moo now anyway, and declared that as a dependency.
 
+0.001	2012-02-02	Initial release

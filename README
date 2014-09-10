@@ -8,41 +8,39 @@ SYNOPSIS
      say Crypt::XkcdPassword->make_password;
 
 DESCRIPTION
-    Yet another password generator module inspired by
-    <http://xkcd.com/936/>.
+    Yet another password generator module inspired by <http://xkcd.com/936/>.
 
   Constructor
-    *   "new(%attr)"
+    *   `new(%attr)`
 
-        Creates a new generator. A single generator can be used to generate
-        as many passwords as you like.
+        Creates a new generator. A single generator can be used to generate as
+        many passwords as you like.
 
   Attributes
     This is a Moose (well, Any::Moose) based class.
 
-    *   "words"
+    *   `words`
 
-        A string which will be appended to "Crypt::XkcdPassword::Words::" to
+        A string which will be appended to `Crypt::XkcdPassword::Words::` to
         form a class name which will be used as a source for words. The
         default is "EN", which means the class used as a source for words is
-        "Crypt::XkcdPassword::Words::EN".
+        `Crypt::XkcdPassword::Words::EN`.
 
-        "Crypt::XkcdPassword::Words::EN" is a list of 10,000 common English
+        `Crypt::XkcdPassword::Words::EN` is a list of 10,000 common English
         words.
 
-        "Crypt::XkcdPassword::Words::EN::Roget" is a list of about 8500
-        words. The words are less questionable, but as there are fewer of
-        them, pass phrases will be chosen from a smaller pool, thus slightly
-        more guessable.
+        `Crypt::XkcdPassword::Words::EN::Roget` is a list of about 8500 words.
+        The words are less questionable, but as there are fewer of them, pass
+        phrases will be chosen from a smaller pool, thus slightly more
+        guessable.
 
         Also supplied is "IT", a list of 20,000 common Italian words.
 
-    *   "rng"
+    *   `rng`
 
         A coderef for generating a random number. The coderef is called and
-        passed a single numeric argument. The coderef is expected to
-        generate a random, positive integer, smaller than the argument. The
-        default is:
+        passed a single numeric argument. The coderef is expected to generate
+        a random, positive integer, smaller than the argument. The default is:
 
          sub { int(rand($_[0])) }
 
@@ -51,28 +49,27 @@ DESCRIPTION
         number generator.
 
   Methods
-    *   "make_password($size, $filter)"
+    *   `make_password($size, $filter)`
 
         Returns the password as a string.
 
         $size is the length of the password in words. It defaults to 4. For
-        the English dictionary that provides over 47 bits of entropy; for
-        the Italian dictionary (which has twice as many words), about 56
-        bits of entropy.
+        the English dictionary that provides over 47 bits of entropy; for the
+        Italian dictionary (which has twice as many words), about 56 bits of
+        entropy.
 
-        $filter is a test against which each word is checked. It can be a
-        sub returning true if the word is OK, or a regular expression
-        matching OK words. Words which are not OK will be excluded from
-        passwords. The default is to allow any words found in the provided
-        dictionary.
+        $filter is a test against which each word is checked. It can be a sub
+        returning true if the word is OK, or a regular expression matching OK
+        words. Words which are not OK will be excluded from passwords. The
+        default is to allow any words found in the provided dictionary.
 
         For reference, 47 bits of entropy is roughly equivalent to an eight
         digit random case-sensitive alphanumeric password (i.e. 62^8).
 
         This can be called as an object method, or (if you have no desire to
-        change the defaults for the "rng" and "words" attributes) as a class
-        method. That is, the first line of the example below is a shortcut
-        for the second line:
+        change the defaults for the `rng` and `words` attributes) as a class
+        method. That is, the first line of the example below is a shortcut for
+        the second line:
 
          say Crypt::XkcdPassword->make_password($size);
          say Crypt::XkcdPassword->new->make_password($size);
@@ -82,11 +79,11 @@ DESCRIPTION
         Crypt::XkcdPassword::Examples for ways of using $filter to resolve
         this situation.
 
-    *   "chars"
+    *   `chars`
 
         No-op, provided for compatibility with Data::SimplePassword.
 
-    *   "provider"
+    *   `provider`
 
         No-op, provided for compatibility with Data::SimplePassword.
 
@@ -110,8 +107,8 @@ AUTHOR
 COPYRIGHT AND LICENCE
     This software is copyright (c) 2012 by Toby Inkster.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
+    This is free software; you can redistribute it and/or modify it under the
+    same terms as the Perl 5 programming language system itself.
 
 DISCLAIMER OF WARRANTIES
     THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED
