@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: '6.17'
 dynamic_config: 0
-generated_by: 'Moose::Meta::Class::__ANON__::SERIAL::11 version , CPAN::Meta::Converter version 2.140640'
+generated_by: 'Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640'
 keywords: []
 license: perl
 meta-spec:
@@ -25,29 +25,32 @@ optional_features: {}
 provides:
   Crypt::XkcdPassword:
     file: lib/Crypt/XkcdPassword.pm
-    version: '0.006'
+    version: '0.007'
   Crypt::XkcdPassword::Words::EN:
     file: lib/Crypt/XkcdPassword/Words/EN.pm
-    version: '0.006'
+    version: '0.007'
   Crypt::XkcdPassword::Words::EN::Roget:
     file: lib/Crypt/XkcdPassword/Words/EN/Roget.pm
-    version: '0.006'
+    version: '0.007'
   Crypt::XkcdPassword::Words::IT:
     file: lib/Crypt/XkcdPassword/Words/IT.pm
-    version: '0.006'
+    version: '0.007'
 requires:
   Module::Runtime: '0'
   Moo: '0'
-  Role::Commons::Authority: '0'
   Types::Standard: '0'
   match::simple: '0'
+  perl: '5.008'
 resources:
   X_identifier: http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/project
   bugtracker: http://rt.cpan.org/Dist/Display.html?Queue=Crypt-XkcdPassword
   homepage: https://metacpan.org/release/Crypt-XkcdPassword
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-crypt-xkcdpassword.git
-version: '0.006'
+version: '0.007'
 x_contributors:
-  - TOBYINK
   - NOBODY
+  - TOBYINK
+x_provides_scripts:
+  passphrase:
+    file: bin/passphrase

@@ -4,7 +4,7 @@
       "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Moose::Meta::Class::__ANON__::SERIAL::11 version , CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
    "keywords" : [],
    "license" : [
       "perl_5"
@@ -34,9 +34,9 @@
          "requires" : {
             "Module::Runtime" : "0",
             "Moo" : "0",
-            "Role::Commons::Authority" : "0",
             "Types::Standard" : "0",
-            "match::simple" : "0"
+            "match::simple" : "0",
+            "perl" : "5.008"
          }
       },
       "test" : {
@@ -48,19 +48,19 @@
    "provides" : {
       "Crypt::XkcdPassword" : {
          "file" : "lib/Crypt/XkcdPassword.pm",
-         "version" : "0.006"
+         "version" : "0.007"
       },
       "Crypt::XkcdPassword::Words::EN" : {
          "file" : "lib/Crypt/XkcdPassword/Words/EN.pm",
-         "version" : "0.006"
+         "version" : "0.007"
       },
       "Crypt::XkcdPassword::Words::EN::Roget" : {
          "file" : "lib/Crypt/XkcdPassword/Words/EN/Roget.pm",
-         "version" : "0.006"
+         "version" : "0.007"
       },
       "Crypt::XkcdPassword::Words::IT" : {
          "file" : "lib/Crypt/XkcdPassword/Words/IT.pm",
-         "version" : "0.006"
+         "version" : "0.007"
       }
    },
    "release_status" : "stable",
@@ -79,9 +79,14 @@
          "web" : "https://github.com/tobyink/p5-crypt-xkcdpassword"
       }
    },
-   "version" : "0.006",
+   "version" : "0.007",
    "x_contributors" : [
-      "TOBYINK",
-      "NOBODY"
-   ]
+      "NOBODY",
+      "TOBYINK"
+   ],
+   "x_provides_scripts" : {
+      "passphrase" : {
+         "file" : "bin/passphrase"
+      }
+   }
 }

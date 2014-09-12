@@ -14,9 +14,7 @@
 	a                    doap:Project;
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap-bugs:issue      <http://purl.org/NET/cpan-uri/rt/ticket/74684>, <http://purl.org/NET/cpan-uri/rt/ticket/74685>;
-	doap-deps:runtime-requirement [ doap-deps:on "match::simple"^^doap-deps:CpanId ], [ doap-deps:on "Module::Runtime"^^doap-deps:CpanId ], [ doap-deps:on "Moo"^^doap-deps:CpanId ], [
-		doap-deps:on "Role::Commons::Authority"^^doap-deps:CpanId;
-	], [ doap-deps:on "Types::Standard"^^doap-deps:CpanId ];
+	doap-deps:runtime-requirement [ doap-deps:on "perl 5.008"^^doap-deps:CpanId ], [ doap-deps:on "match::simple"^^doap-deps:CpanId ], [ doap-deps:on "Module::Runtime"^^doap-deps:CpanId ], [ doap-deps:on "Moo"^^doap-deps:CpanId ], [ doap-deps:on "Types::Standard"^^doap-deps:CpanId ];
 	doap-deps:test-requirement [ doap-deps:on "Test::More 0.96"^^doap-deps:CpanId ];
 	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=Crypt-XkcdPassword>;
 	doap:created         "2012-02-02"^^xsd:date;
@@ -27,7 +25,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Crypt-XkcdPassword";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-004>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-005>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-006>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-004>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-005>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-006>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-007>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-crypt-xkcdpassword>;
@@ -113,6 +111,29 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Crypt-XkcdPassword-0.006.tar.gz>;
 	doap:revision        "0.006"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-007>
+	a                    doap:Version;
+	dc:identifier        "Crypt-XkcdPassword-0.007"^^xsd:string;
+	dc:issued            "2014-09-10"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Change;
+			rdfs:label "General tidying.";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "Support for Perl 5.8.";
+		], [
+			a doap-changeset:Change;
+			rdfs:label "Don't depend on Role::Commons.";
+		], [
+			a doap-changeset:Addition;
+			rdfs:label "Bundle `passphrase` command-line tool.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Crypt-XkcdPassword-0.007.tar.gz>;
+	doap:revision        "0.007"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;

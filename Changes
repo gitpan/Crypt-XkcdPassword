@@ -6,6 +6,13 @@ Home page:    <https://metacpan.org/release/Crypt-XkcdPassword>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Crypt-XkcdPassword>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.007	2014-09-10
+
+ - Added: Bundle `passphrase` command-line tool.
+ - Don't depend on Role::Commons.
+ - General tidying.
+ - Support for Perl 5.8.
+
 0.006	2014-09-10
 
  [ Packaging ]
@@ -31,10 +38,10 @@ Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
  [ Other ]
  - Added: Provide a $filter parameter to make_password.
-   Fixes RT#74684.
    Fixes RT#74685.
-   <https://rt.cpan.org/Ticket/Display.html?id=74684>
+   Fixes RT#74684.
    <https://rt.cpan.org/Ticket/Display.html?id=74685>
+   <https://rt.cpan.org/Ticket/Display.html?id=74684>
 
 0.002	2012-02-03
 

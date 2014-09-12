@@ -4,56 +4,57 @@ use ExtUtils::MakeMaker 6.17;
 my $EUMM = eval( $ExtUtils::MakeMaker::VERSION );
 
 my $meta = {
-  "abstract"       => "see http://xkcd.com/936/",
-  "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
-  "dynamic_config" => 0,
-  "generated_by"   => "Moose::Meta::Class::__ANON__::SERIAL::11 version , CPAN::Meta::Converter version 2.140640",
-  "keywords"       => [],
-  "license"        => ["perl_5"],
-  "meta-spec"      => {
-                        url => "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-                        version => 2,
-                      },
-  "name"           => "Crypt-XkcdPassword",
-  "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
-  "prereqs"        => {
-                        configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        runtime => {
-                          requires => {
-                            "match::simple" => 0,
-                            "Module::Runtime" => 0,
-                            "Moo" => 0,
-                            "Role::Commons::Authority" => 0,
-                            "Types::Standard" => 0,
+  "abstract"           => "see http://xkcd.com/936/",
+  "author"             => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
+  "dynamic_config"     => 0,
+  "generated_by"       => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
+  "keywords"           => [],
+  "license"            => ["perl_5"],
+  "meta-spec"          => {
+                            url => "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+                            version => 2,
                           },
-                        },
-                        test => { requires => { "Test::More" => 0.96 } },
-                      },
-  "provides"       => {
-                        "Crypt::XkcdPassword"                   => { file => "lib/Crypt/XkcdPassword.pm", version => 0.006 },
-                        "Crypt::XkcdPassword::Words::EN"        => { file => "lib/Crypt/XkcdPassword/Words/EN.pm", version => 0.006 },
-                        "Crypt::XkcdPassword::Words::EN::Roget" => {
-                                                                     file => "lib/Crypt/XkcdPassword/Words/EN/Roget.pm",
-                                                                     version => 0.006,
-                                                                   },
-                        "Crypt::XkcdPassword::Words::IT"        => { file => "lib/Crypt/XkcdPassword/Words/IT.pm", version => 0.006 },
-                      },
-  "release_status" => "stable",
-  "resources"      => {
-                        bugtracker   => {
-                                          web => "http://rt.cpan.org/Dist/Display.html?Queue=Crypt-XkcdPassword",
-                                        },
-                        homepage     => "https://metacpan.org/release/Crypt-XkcdPassword",
-                        license      => ["http://dev.perl.org/licenses/"],
-                        repository   => {
-                                          type => "git",
-                                          url  => "git://github.com/tobyink/p5-crypt-xkcdpassword.git",
-                                          web  => "https://github.com/tobyink/p5-crypt-xkcdpassword",
-                                        },
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/project",
-                      },
-  "version"        => 0.006,
-  "x_contributors" => ["TOBYINK", "NOBODY"],
+  "name"               => "Crypt-XkcdPassword",
+  "no_index"           => { directory => ["eg", "examples", "inc", "t", "xt"] },
+  "prereqs"            => {
+                            configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
+                            runtime => {
+                              requires => {
+                                "match::simple" => 0,
+                                "Module::Runtime" => 0,
+                                "Moo" => 0,
+                                "perl" => 5.008,
+                                "Types::Standard" => 0,
+                              },
+                            },
+                            test => { requires => { "Test::More" => 0.96 } },
+                          },
+  "provides"           => {
+                            "Crypt::XkcdPassword"                   => { file => "lib/Crypt/XkcdPassword.pm", version => 0.007 },
+                            "Crypt::XkcdPassword::Words::EN"        => { file => "lib/Crypt/XkcdPassword/Words/EN.pm", version => 0.007 },
+                            "Crypt::XkcdPassword::Words::EN::Roget" => {
+                                                                         file => "lib/Crypt/XkcdPassword/Words/EN/Roget.pm",
+                                                                         version => 0.007,
+                                                                       },
+                            "Crypt::XkcdPassword::Words::IT"        => { file => "lib/Crypt/XkcdPassword/Words/IT.pm", version => 0.007 },
+                          },
+  "release_status"     => "stable",
+  "resources"          => {
+                            bugtracker   => {
+                                              web => "http://rt.cpan.org/Dist/Display.html?Queue=Crypt-XkcdPassword",
+                                            },
+                            homepage     => "https://metacpan.org/release/Crypt-XkcdPassword",
+                            license      => ["http://dev.perl.org/licenses/"],
+                            repository   => {
+                                              type => "git",
+                                              url  => "git://github.com/tobyink/p5-crypt-xkcdpassword.git",
+                                              web  => "https://github.com/tobyink/p5-crypt-xkcdpassword",
+                                            },
+                            X_identifier => "http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/project",
+                          },
+  "version"            => 0.007,
+  "x_contributors"     => ["NOBODY", "TOBYINK"],
+  "x_provides_scripts" => { passphrase => { file => "bin/passphrase" } },
 };
 
 my %dynamic_config;
