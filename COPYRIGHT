@@ -23,9 +23,11 @@ Files: Changes
  bin/passphrase
  dist.ini
  doap.ttl
+ lib/Crypt/XkcdPassword/Words.pm
  lib/Crypt/XkcdPassword/Words/EN.pm
  lib/Crypt/XkcdPassword/Words/EN/Roget.pm
  lib/Crypt/XkcdPassword/Words/IT.pm
+ lib/Crypt/XkcdPassword/Words/sys.pm
 Copyright: Copyright 2014 Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
@@ -47,12 +49,12 @@ Files: README
 Copyright: This software is copyright (c) 2012, 2014 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
-Files: lib/Crypt/XkcdPassword/Examples.pod
-Copyright: This software is copyright (c) 2012 by Toby Inkster.
-License: GPL-1.0+ or Artistic-1.0
-
 Files: Makefile.PL
 Copyright: Copyright 2013 Toby Inkster.
+License: GPL-1.0+ or Artistic-1.0
+
+Files: lib/Crypt/XkcdPassword/Examples.pod
+Copyright: This software is copyright (c) 2012 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 
 License: Artistic-1.0

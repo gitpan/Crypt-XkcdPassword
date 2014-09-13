@@ -20,9 +20,11 @@ examples/filter.pl
 examples/password-gen.pl
 lib/Crypt/XkcdPassword.pm
 lib/Crypt/XkcdPassword/Examples.pod
+lib/Crypt/XkcdPassword/Words.pm
 lib/Crypt/XkcdPassword/Words/EN.pm
 lib/Crypt/XkcdPassword/Words/EN/Roget.pm
 lib/Crypt/XkcdPassword/Words/IT.pm
+lib/Crypt/XkcdPassword/Words/sys.pm
 t/01basic.t
 t/02nonrandom.t
 t/03filter.t

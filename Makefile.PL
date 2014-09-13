@@ -22,21 +22,23 @@ my $meta = {
                               requires => {
                                 "match::simple" => 0,
                                 "Module::Runtime" => 0,
-                                "Moo" => 0,
+                                "Moo" => "1.006000",
                                 "perl" => 5.008,
-                                "Types::Standard" => 0,
+                                "Types::Standard" => "1.000000",
                               },
                             },
                             test => { requires => { "Test::More" => 0.96 } },
                           },
   "provides"           => {
-                            "Crypt::XkcdPassword"                   => { file => "lib/Crypt/XkcdPassword.pm", version => 0.008 },
-                            "Crypt::XkcdPassword::Words::EN"        => { file => "lib/Crypt/XkcdPassword/Words/EN.pm", version => 0.008 },
+                            "Crypt::XkcdPassword"                   => { file => "lib/Crypt/XkcdPassword.pm", version => 0.009 },
+                            "Crypt::XkcdPassword::Words"            => { file => "lib/Crypt/XkcdPassword/Words.pm" },
+                            "Crypt::XkcdPassword::Words::EN"        => { file => "lib/Crypt/XkcdPassword/Words/EN.pm", version => 0.009 },
                             "Crypt::XkcdPassword::Words::EN::Roget" => {
                                                                          file => "lib/Crypt/XkcdPassword/Words/EN/Roget.pm",
-                                                                         version => 0.008,
+                                                                         version => 0.009,
                                                                        },
-                            "Crypt::XkcdPassword::Words::IT"        => { file => "lib/Crypt/XkcdPassword/Words/IT.pm", version => 0.008 },
+                            "Crypt::XkcdPassword::Words::IT"        => { file => "lib/Crypt/XkcdPassword/Words/IT.pm", version => 0.009 },
+                            "Crypt::XkcdPassword::Words::sys"       => { file => "lib/Crypt/XkcdPassword/Words/sys.pm", version => 0.009 },
                           },
   "release_status"     => "stable",
   "resources"          => {
@@ -52,7 +54,7 @@ my $meta = {
                                             },
                             X_identifier => "http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/project",
                           },
-  "version"            => 0.008,
+  "version"            => 0.009,
   "x_provides_scripts" => { passphrase => { file => "bin/passphrase" } },
 };
 

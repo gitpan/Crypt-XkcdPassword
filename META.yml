@@ -25,20 +25,25 @@ optional_features: {}
 provides:
   Crypt::XkcdPassword:
     file: lib/Crypt/XkcdPassword.pm
-    version: '0.008'
+    version: '0.009'
+  Crypt::XkcdPassword::Words:
+    file: lib/Crypt/XkcdPassword/Words.pm
   Crypt::XkcdPassword::Words::EN:
     file: lib/Crypt/XkcdPassword/Words/EN.pm
-    version: '0.008'
+    version: '0.009'
   Crypt::XkcdPassword::Words::EN::Roget:
     file: lib/Crypt/XkcdPassword/Words/EN/Roget.pm
-    version: '0.008'
+    version: '0.009'
   Crypt::XkcdPassword::Words::IT:
     file: lib/Crypt/XkcdPassword/Words/IT.pm
-    version: '0.008'
+    version: '0.009'
+  Crypt::XkcdPassword::Words::sys:
+    file: lib/Crypt/XkcdPassword/Words/sys.pm
+    version: '0.009'
 requires:
   Module::Runtime: '0'
-  Moo: '0'
-  Types::Standard: '0'
+  Moo: '1.006000'
+  Types::Standard: '1.000000'
   match::simple: '0'
   perl: '5.008'
 resources:
@@ -47,7 +52,7 @@ resources:
   homepage: https://metacpan.org/release/Crypt-XkcdPassword
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-crypt-xkcdpassword.git
-version: '0.008'
+version: '0.009'
 x_provides_scripts:
   passphrase:
     file: bin/passphrase
