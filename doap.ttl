@@ -25,7 +25,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Crypt-XkcdPassword";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-004>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-005>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-006>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-007>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-004>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-005>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-006>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-007>, <http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-008>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-crypt-xkcdpassword>;
@@ -135,6 +135,24 @@
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Crypt-XkcdPassword-0.007.tar.gz>;
 	doap:revision        "0.007"^^xsd:string.
 
+<http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/v_0-008>
+	a                    doap:Version;
+	dc:identifier        "Crypt-XkcdPassword-0.008"^^xsd:string;
+	dc:issued            "2014-09-13"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Packaging;
+			rdfs:label "Fix issue tracker metadata so that 'NOBODY' doesn't show up in CREDITS file for reporting some bugs.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Crypt-XkcdPassword-0.008.tar.gz>;
+	doap:revision        "0.008"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/person/NEILB>
+	a                    foaf:Agent;
+	foaf:mbox            <mailto:NEILB@cpan.org>.
+
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;
 	foaf:mbox            <mailto:tobyink@cpan.org>;
@@ -143,26 +161,18 @@
 <http://purl.org/NET/cpan-uri/rt/ticket/74684>
 	a                    doap-bugs:Issue;
 	rdfs:label           "invalid words in the wordlist";
-	dc:created           "2012-02-04T23:45:32"^^xsd:dateTime;
-	dc:modified          "2012-02-27T23:39:42"^^xsd:dateTime;
-	doap-bugs:assignee   [ a foaf:Agent; foaf:nick "TOBYINK" ];
-	doap-bugs:id         "74684"^^xsd:string;
-	doap-bugs:page       <https://rt.cpan.org/Ticket/Display.html?id=74684>;
-	doap-bugs:reporter   _:B1;
-	doap-bugs:status     <http://purl.org/NET/cpan-uri/rt/status/open>.
+	dc:created           "2012-02-04T23:45:32Z"^^xsd:dateTime;
+	dc:reporter          <http://purl.org/NET/cpan-uri/person/NEILB>;
+	doap-bugs:id         "74684";
+	doap-bugs:page       <https://rt.cpan.org/Public/Bug/Display.html?id=74684>;
+	doap-bugs:status     <http://purl.org/NET/cpan-uri/rt/status/resolved>.
 
 <http://purl.org/NET/cpan-uri/rt/ticket/74685>
 	a                    doap-bugs:Issue;
 	rdfs:label           "don't include swear words, or provide an option to decide";
-	dc:created           "2012-02-04T23:47:34"^^xsd:dateTime;
-	dc:modified          "2012-02-06T22:53:11"^^xsd:dateTime;
-	doap-bugs:assignee   [ a foaf:Agent; foaf:nick "Nobody" ];
-	doap-bugs:id         "74685"^^xsd:string;
-	doap-bugs:page       <https://rt.cpan.org/Ticket/Display.html?id=74685>;
-	doap-bugs:reporter   _:B1;
+	dc:created           "2012-02-04T23:47:34Z"^^xsd:dateTime;
+	dc:reporter          <http://purl.org/NET/cpan-uri/person/NEILB>;
+	doap-bugs:id         "74685";
+	doap-bugs:page       <https://rt.cpan.org/Public/Bug/Display.html?id=74685>;
 	doap-bugs:status     <http://purl.org/NET/cpan-uri/rt/status/rejected>.
-
-_:B1
-	a                    foaf:Agent;
-	foaf:mbox            <mailto:NEILB@cpan.org>.
 

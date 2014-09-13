@@ -6,6 +6,12 @@ Home page:    <https://metacpan.org/release/Crypt-XkcdPassword>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Crypt-XkcdPassword>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.008	2014-09-13
+
+ [ Packaging ]
+ - Fix issue tracker metadata so that 'NOBODY' doesn't show up in CREDITS
+   file for reporting some bugs.
+
 0.007	2014-09-10
 
  - Added: Bundle `passphrase` command-line tool.
@@ -40,8 +46,8 @@ Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
  - Added: Provide a $filter parameter to make_password.
    Fixes RT#74685.
    Fixes RT#74684.
-   <https://rt.cpan.org/Ticket/Display.html?id=74685>
-   <https://rt.cpan.org/Ticket/Display.html?id=74684>
+   <https://rt.cpan.org/Public/Bug/Display.html?id=74685>
+   <https://rt.cpan.org/Public/Bug/Display.html?id=74684>
 
 0.002	2012-02-03
 

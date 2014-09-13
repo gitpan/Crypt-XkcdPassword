@@ -30,13 +30,13 @@ my $meta = {
                             test => { requires => { "Test::More" => 0.96 } },
                           },
   "provides"           => {
-                            "Crypt::XkcdPassword"                   => { file => "lib/Crypt/XkcdPassword.pm", version => 0.007 },
-                            "Crypt::XkcdPassword::Words::EN"        => { file => "lib/Crypt/XkcdPassword/Words/EN.pm", version => 0.007 },
+                            "Crypt::XkcdPassword"                   => { file => "lib/Crypt/XkcdPassword.pm", version => 0.008 },
+                            "Crypt::XkcdPassword::Words::EN"        => { file => "lib/Crypt/XkcdPassword/Words/EN.pm", version => 0.008 },
                             "Crypt::XkcdPassword::Words::EN::Roget" => {
                                                                          file => "lib/Crypt/XkcdPassword/Words/EN/Roget.pm",
-                                                                         version => 0.007,
+                                                                         version => 0.008,
                                                                        },
-                            "Crypt::XkcdPassword::Words::IT"        => { file => "lib/Crypt/XkcdPassword/Words/IT.pm", version => 0.007 },
+                            "Crypt::XkcdPassword::Words::IT"        => { file => "lib/Crypt/XkcdPassword/Words/IT.pm", version => 0.008 },
                           },
   "release_status"     => "stable",
   "resources"          => {
@@ -52,8 +52,7 @@ my $meta = {
                                             },
                             X_identifier => "http://purl.org/NET/cpan-uri/dist/Crypt-XkcdPassword/project",
                           },
-  "version"            => 0.007,
-  "x_contributors"     => ["NOBODY", "TOBYINK"],
+  "version"            => 0.008,
   "x_provides_scripts" => { passphrase => { file => "bin/passphrase" } },
 };
 
